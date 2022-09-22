@@ -3,13 +3,16 @@ public class Vehicle {
     String brand;
     String modelName;
     int modelYear;
+    public void EngineCapacity(){
+        System.out.println("2000cc");
+    }
 }
 
 class Car extends Vehicle
 {
     public static void main(String[] args) {
         Car bmw=new Car();
-        bmw.brand="BMW";
+
         bmw.modelName="3 series";
         bmw.color="black";
         bmw.modelYear=2022;
@@ -17,6 +20,7 @@ class Car extends Vehicle
         System.out.println(bmw.modelName);
         System.out.println(bmw.color);
         System.out.println(bmw.modelYear);
+        bmw.EngineCapacity();
     }
 }
 
